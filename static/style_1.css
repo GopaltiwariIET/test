@@ -1,0 +1,218 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: unset;
+    background-color: unset;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.container {
+    background: url(../static/bgimg.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    padding: 3px 8px;
+    justify-items: stretch;
+    align-items: center;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20%;
+    font-family: cursive, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    height: 30px;
+}
+
+
+.navlist li {
+    list-style: none;
+    padding: 10px;
+}
+
+.navlist li a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: #16674d;
+    user-select: none;
+}
+
+.navlist li a:hover {
+    font-size: 26px;
+    color: #2617f3;
+    font-weight: 600;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login button {
+    border: 2px solid aqua;
+    border-radius: 5px;
+    font-size: 15px;
+    height: 25px;
+    width: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 5rem;
+    box-shadow: 2px 3px 1px #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img {
+    height: 30px;
+    width: 35px;
+    overflow: hidden;
+    border-radius: 15%;
+    filter: invert(1);
+    margin: 0px 3px;
+}
+
+.logo::after {
+    content: "XYZ SUPERMARKET";
+    background: linear-gradient(to right bottom, #00c7ff, #ff00f7);
+    font-weight: 800;
+    font-size: 22px;
+    background-clip: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    user-select: none;
+}
+
+#home {
+    display: flex;
+    height: 90vh;
+    width: inherit;
+    margin-top: 70px;
+}
+
+.pt_1 {
+    width: 40%;
+    height: 70%;
+    margin: auto;
+}
+
+.pt_2 {
+    margin: 0 auto;
+}
+
+.pt_1 h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: #5349f9;
+    text-align: center;
+}
+
+.pt_1 h1 {
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0 10px 10px #000;
+}
+
+.pt_1 p {
+    text-align: center;
+    margin: 23px 0;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.pt_1 p span {
+    text-decoration: underline;
+    text-decoration-color: rgb(178 161 171);
+    text-decoration-style: dotted;
+    text-decoration-thickness: 2px;
+}
+
+.pt_1 p strong {
+    display: block;
+    margin-top: 23px;
+
+}
+
+.pt_1 p strong::after {
+    content: "T&C Apply";
+    display: block;
+    color: red;
+    font-size: 18px;
+}
+
+.pt_2 img {
+    height: 80vh;
+    width: 36vw;
+    overflow: hidden;
+    filter: drop-shadow(2px 4px 6px black);
+    animation: emerge 3s ease-out,
+        move 1s infinite alternate 3s;
+}
+
+.greet {
+    text-align: center;
+    color: blue;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 20px;
+}
+
+.greet span {
+    padding: 2px;
+    display: block;
+}
+
+@keyframes emerge {
+    0% {
+        visibility: hidden;
+        transform: translateX(50vw);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(30px);
+    }
+}
