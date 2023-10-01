@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    background: url(/bgimg.jpg) no-repeat center;
+    background: url(./bgimg.jpg) no-repeat center;
     background-size: cover;
     min-height: 100vh;
 }
